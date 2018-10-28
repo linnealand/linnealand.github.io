@@ -4,12 +4,14 @@
     display: flex;
     overflow: hidden;
     background-color: #333;
+    /* opacity: 0.75; */
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
     margin: 0;
     list-style-type: none;
     z-index: 1;
+    font-family: "Handlee", cursive;
 }
 .navbar > li {
     flex: 1;
@@ -28,11 +30,20 @@
 }
 
 .home {
-    display: block;
-    padding-top: 50px;
-    background-color: cadetblue;
+    /* display: block; */
     position: relative;
     text-align: center;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    color: #333;
     width: 100%;
 }
 
