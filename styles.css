@@ -37,6 +37,7 @@
     position: relative;
     text-align: center;
     /* background-color: #e3a9fa; */
+    width: 100%;
 }
 
 .name {
@@ -56,6 +57,7 @@
     background-color: #ecc4ff;
     position: relative;
     padding: 5%;
+    width: 100%;
 }
 
 .projects {
