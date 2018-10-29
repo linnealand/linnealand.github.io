@@ -1,4 +1,8 @@
-* { margin: 0px; padding: 0px; }
+* {
+    margin: 0px; 
+    padding: 0px;
+    font-family: "Raleway", sans-serif;
+}
 
 .navbar {
     display: flex;
@@ -17,7 +21,6 @@
     flex: 1;
 }
 .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -29,19 +32,20 @@
 	color: black;
 }
 
-.home {
+.header {
     /* display: block; */
     position: relative;
     text-align: center;
+    /* background-color: #e3a9fa; */
 }
 
-.welcome {
+.name {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vw;
-    font-family: "Handlee", cursive;
+    /* font-family: "Handlee", cursive; */
     font-weight: bold;
     color: #333;
     width: 100%;
@@ -49,17 +53,18 @@
 
 .about {
     display: block;
-    background-color: aquamarine;
+    background-color: #ecc4ff;
     position: relative;
+    padding: 5%;
 }
 
 .projects {
     display: flex;
-    background-color: silver;
+    background-color: #fef0e1;
     position: relative;
     flex-flow: column;
     width: 100%;
-
+    padding: 5%;
 }
 .project-list {
     display: flex;
@@ -67,11 +72,22 @@
     text-align: center;
 	width: 100%; /* Full width */
     margin: 0;
-    list-style-type: none;
-
+    list-style: none;
 }
 .project-list > li {
     flex: 1;
+}
+.project-1 {
+    background-color: rgb(172, 255, 234);
+    padding: 5%;
+}
+.project-2 {
+    background-color: rgb(250, 193, 220);
+    padding: 5%;
+}
+.project-3 {
+    background-color: rgb(255, 223, 135);
+    padding: 5%;
 }
 
 .contact {
@@ -79,6 +95,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 50px;
+    padding: 5%
 }
 
 .container {
@@ -100,4 +117,11 @@ footer {
 
 body {
 	margin: 0px;
+}
+/* Anchor offset */
+.destination {
+	position: relative;
+	z-index: -1;
+	left: 0;
+	margin-top:-90px;
 }
