@@ -9,31 +9,65 @@ $("nav").find("a").click(function(e) {
 
 
 // Project img slideshow
-  var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex1 = 1;
+showSlides(1, slideIndex1);
+var slideIndex2 = 1;
+showSlides(2, slideIndex2);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(p, n) {
+  if (p == 1) {
+    showSlides(p, slideIndex1 += n)
+  }
+  else if (p == 2) {
+    showSlides(p, slideIndex2 += n)
+  }
+  // showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(p, n) {
+  showSlides(p, slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(p, n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+  if (p == 1) {
+    var slides = document.getElementsByClassName("slides1");
+    if (n > slides.length) {
+      slideIndex1 = 1
+    }
+    if (n < 1) {
+      slideIndex1 = slides.length
+    }
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex1-1].style.display = "block";
+
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  else if (p == 2) {
+    var slides = document.getElementsByClassName("slides2");
+    if (n > slides.length) {
+      slideIndex2 = 1
+    }
+    if (n < 1) {
+      slideIndex2 = slides.length
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex2-1].style.display = "block";
   }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  // var dots = document.getElementsByClassName("dot");
+
+
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  // dots[slideIndex-1].className += " active";
 }
