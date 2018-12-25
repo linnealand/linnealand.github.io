@@ -3,14 +3,15 @@
     padding: 0px;
     font-family: "Raleway", sans-serif;
     line-height: 2.0;
-    color: #333;
+    color: #fff;
     box-sizing: border-box;
 }
 
 .navbar {
     display: flex;
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
+    /*background-color: #333;*/
     /* opacity: 0.75; */
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -25,21 +26,24 @@
 }
 .navbar a {
     display: block;
-    color: #f2f2f2;
+    color: #fff;
+    /*color: #f2f2f2;*/
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .navbar a:hover {
-    background: #ddd;
-	color: black;
+    background-color: #eacccc;
+    /*background: #ddd;*/
+	color: #212121;
 }
 
 .header {
     /* display: block; */
     position: relative;
     text-align: center;
-    /* background-color: #e3a9fa; */
+    padding: 20%;
+    background-color: #c9adb7; 
     width: 100%;
 }
 
@@ -48,80 +52,122 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5vw;
+    /*font-size: 5vw;*/
     /* font-family: "Handlee", cursive; */
     font-weight: bold;
-    color: #333;
+    color: #212121;
     width: 100%;
-}
-#title {
-    font-size: 2vw;
 }
 
-.about {
-    display: block;
-    background-color: #ecc4ff;
+.education {
+    /*display: block;*/
+    /*background-color: #212121;*/
     /* background-color: rgb(200, 187, 187); */
-    /* background-color: #ddd; */
+    background-color: #a491a2; 
     position: relative;
-    padding: 5%;
+    text-align: center;
+    padding: 100px;
+    /*margin: 200px;*/
     width: 100%;
-}
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;    
-}
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 .year {
     font-size: 75%;
 }
 
+.experience {
+    /*display: flex;*/
+    background-color: #7d778c;
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    width: 100%;
+}
+
 .projects {
     display: flex;
-    background-color: #fef0e1;
+    background-color: #555f74;
     position: relative;
     flex-flow: column;
     width: 100%;
-    padding: 5%;
+    padding: 100px;
+    text-align: center;
 }
 .project-list {
-    display: flex;
+    /*display: inline-block;*/
     overflow: hidden;
-    text-align: center;
-	width: 100%; /* Full width */
-    margin: 0;
+	/*width: 90%;  Full width */
+    margin: auto;
     list-style: none;
 }
-.project-list > li {
+/*.project-list > li {
     flex: 1;
-}
+}*/
 .project-1 {
-    background-color: rgb(172, 255, 234);
+    /*background-color: rgb(172, 255, 234);*/
+    background-color: #6f7b95;
+    /*border: 1px solid #212121;*/
     padding: 5%;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    /*overflow: hidden;*/
 }
+.project-1 img {
+    margin-right: 15px;
+    float: left;
+}
+
 .project-2 {
-    background-color: rgb(250, 193, 220);
+    /*background-color: rgb(250, 193, 220);*/
+    background-color: #7a859e;
+    /*border: 1px solid #212121;*/
+    border-top: none;
+    border-bottom: none;
     padding: 5%;
 }
 .project-3 {
-    background-color: rgb(255, 223, 135);
+    /*background-color: rgb(255, 223, 135);*/
+    background-color: #8590a6;
+    /*border: 1px solid #212121;*/
     padding: 5%;
 }
 
-.contact {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 50px;
-    padding: 5%;
-    background-color: #ecc4ff;
+
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 50%;*/
+  width: 50%;
+  /*position: relative;*/
+  /*margin: auto;*/
+  padding: 20px;
+  /*background: #2f2f2f;*/
+  float: left;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*width: auto;*/
+  /*margin-top: 100px;*/
+  padding: 10px;
+  /*margin-bottom: 0px;*/
+  color: white;
+  font-weight: bold;
+  /*font-size: 18px;*/
+  transition: 0.6s ease;
+  border-radius: 3px 3px 3px 3px;
+}
+.prev {
+  margin-right: 20px;
+}
+ Position the "next button" to the right 
+.next {
+  margin-left: 20px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .container {
@@ -132,17 +178,17 @@
 footer {
     display: flex;
     overflow: hidden;
-    background-color: #333;
+    background-color: #212121;
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
     margin: 0;
     z-index: 1;
-    color: white;
+    color: #fff;
 }
 
 body {
-	margin: 0px;
+	/*margin: 0px;*/
 }
 /* Anchor offset */
 .destination {
