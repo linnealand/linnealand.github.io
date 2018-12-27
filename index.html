@@ -5,7 +5,7 @@
 		<title>Linnea Land</title>
 		<meta charset="utf-8">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-		<link href="styles.css" type="text/css" rel="stylesheet">
+		<link href="styles/styles.css" type="text/css" rel="stylesheet">
 		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee"> -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
@@ -43,14 +43,13 @@
 					<ul style="padding-left: 40px">
 						<li>B.S. in Computer Science</li>
 						<li>Minors: Math & Spanish</li>
-						<li>GPA: n/a</li>
 					</ul>
 			</div>
 			<!-- Item 2 -->
 			<div style="background: #7e687c; padding: 20px;">
 				<h2>Courses</h2>
 					<ul style="padding-left: 40px">
-					  <li>CS 180 Problem Solving & Object-Oriented Programming</li>
+					  	<li>CS 180 Problem Solving & Object-Oriented Programming</li>
 						<li>Data Structures</li>
 						<li>AP Computer Science A</li>
 						<li>Introduction to Computer Science</li>
@@ -67,9 +66,10 @@
 			<div style="display: inline-block; text-align: left;">
 			<!-- Item 1 -->
 			<div style="padding: 20px; background: #9b97a7;">
-				<span style="font-weight: bold;">Windsor Dining Court</span>, Purdue Dining & Catering | West Lafayette, IN
+				<span style="font-weight: bold;">Windsor Dining Court</span> | Purdue Dining & Catering
 				<span style="float: right;">Aug. 2018 - present</span><br>
-				<em>Student Cook in Training</em><br>
+				<em>Student Cook in Training</em>
+				<span style="float: right;">West Lafayette, IN</span><br>
 				<ul style="padding-left: 40px;">
 					<li>Carry out duties including serving food, washing dishes, wiping tables, and serving customers</li>
 				</ul>
@@ -114,7 +114,7 @@
 						<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 					</div>
 
-					<p style="text-align: justify; padding-top: 20px;">
+					<p style="text-align: justify; padding: 20px;">
 						The player uses the left and right arrow keys to control a cat that moves left and right
 						at the bottom of the screen trying to catch the food falling from the sky.
 						The speed the foods fall at increases over time, while the cat’s move speed increases at the same rate.
@@ -144,7 +144,7 @@
 						<a class="next" onclick="plusSlides(2, 1)">&#10095;</a>
 					</div>
 
-					<p style="text-align: justify; padding-top: 20px;">
+					<p style="text-align: justify; padding: 20px;">
 						The two players, controlled by <span style="color: blue;">← ↑ →</span>
 						and <span style="color: red;">a w d</span>, must work as a team to reach the exit doors.
 						Players cannot pass through <span style="color: saddlebrown;">walls</span>.
@@ -157,14 +157,34 @@
 				</li>
 				<!-- Item 3 -->
 				<li class="project-3">
-					<a href="#project3"><h2>Project 3</h2></a>
+					<a href="quiz.html" target="_blank"><h2>LoL Role Quiz</h2></a>
 
+					<!-- Slideshow -->
+					<div class="slideshow-container">
+						<div class="slides3 fade">
+							<img src="images/project-3.1.png" style="width:100%; margin-bottom: 10px;">
+						</div>
+						<div class="slides3 fade" style="display: none;">
+							<img src="images/project-3.2.png" style="width:100%; margin-bottom: 10px;">
+						</div>
+						<div class="slides3 fade" style="display: none;">
+							<img src="images/project-3.3.png" style="width:100%; margin-bottom: 10px;">
+						</div>
+						<!-- <div class="slides3 fade" style="display: none;">
+							<img src="images/project-3.4.png" style="width:100%; margin-bottom: 10px;">
+						</div> -->
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(3, -1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(3, 1)">&#10095;</a>
+					</div>
 
-					<p style="text-align: justify; padding-top: 20px;">
-						picture and description of the project, probs gonna link to either individual project pages or github
+					<p style="text-align: justify; padding: 20px;">
+						A quiz to determine which role in League of Legends you should main.
+						<a href="quiz.html" target="_blank" style="color: #eacccc";>Click here to try the quiz!</a>
 					</p>
 					<span id="tech">html</span>
 					<span id="tech">css</span>
+					<span id="tech">javascript</span>
 				</li>
 			</ul>
 		</div>
@@ -176,6 +196,6 @@
 			Welcome to Linnea Land ♥
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="script.js"></script>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
