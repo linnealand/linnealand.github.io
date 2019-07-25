@@ -1,200 +1,40 @@
 * {
+    font-family: "Raleway", sans-serif;
+    color: #59595c;
     margin: 0px;
     padding: 0px;
-    font-family: "Raleway", sans-serif;
-    line-height: 2.0;
-    color: #fff;
-    box-sizing: border-box;
 }
 
-.navbar {
-    display: flex;
-    overflow: hidden;
-    background-color: #212121;
-    /* opacity: 0.75; */
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    margin: 0;
-    list-style-type: none;
-    z-index: 1;
-    font-family: "Handlee", cursive;
-}
-.navbar > li {
-    flex: 1;
-}
-.navbar a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.navbar a:hover {
-    background-color: #eacccc;
-    color: #212121;
-}
-
-.header {
-    /* display: block; */
-    position: relative;
-    text-align: center;
-    padding: 20%;
-    background-color: #c9adb7;
-    width: 100%;
-}
-.name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*font-size: 5vw;*/
-    /* font-family: "Handlee", cursive; */
-    font-weight: bold;
-    color: #212121;
-    width: 100%;
-}
-
-.education {
-    /*display: block;*/
-    /*background-color: #212121;*/
-    /* background-color: rgb(200, 187, 187); */
-    background-color: #a491a2;
-    position: relative;
-    text-align: center;
-    padding: 100px;
-    /*margin: 200px;*/
-    width: 100%;
-}
-.year {
-    font-size: 75%;
-}
-
-.experience {
-    /*display: flex;*/
-    background-color: #7d778c;
-    position: relative;
-    text-align: center;
-    padding: 100px;
-    width: 100%;
-}
-
-.projects {
-    display: flex;
-    background-color: #555f74;
-    position: relative;
-    flex-flow: column;
-    width: 100%;
-    padding: 100px;
-    text-align: center;
-}
-.project-list {
-    /*display: inline-block;*/
-    overflow: hidden;
-	  /* width: 90%;  Full width */
-    margin: auto;
+nav ul {
     list-style: none;
+    text-align: center;
+    background-color: #ffc08c;
 }
-/*.project-list > li {
-    flex: 1;
-}*/
-.project-list img {
-    margin-right: 15px;
-    float: left;
-    border: 2px solid #212121;
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    color: white;
 }
-.project-1 {
-    background-color: #6f7b95;
-    display: inline-block;
-    width: 100%;
-    padding: 20px;
-    /*overflow: hidden;*/
-}
-.project-2 {
-    background-color: #7a859e;
-    display: inline-block;
-    width: 100%;
-    padding: 20px;
-}
-.project-3 {
-    background-color: #8590a6;
-    display: inline-block;
-    width: 100%;
-    padding: 20px;
-}
-#tech {
-  font-family: 'Major Mono Display', monospace;
-  border: 2px solid #212121;
-  border-radius: 25px;
-  /* background: #555f74; */
-  background: #2f4858;
-  padding: 10px;
-  margin: 5px;
-}
-/* Slideshow container */
-.slideshow-container {
-  /*max-width: 50%;*/
-  width: 50%;
-  /*position: relative;*/
-  /*margin: auto;*/
-  padding: 20px;
-  /*background: #2f2f2f;*/
-  float: left;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  /*position: absolute;*/
-  /*top: 50%;*/
-  /*width: auto;*/
-  /*margin-top: 100px;*/
-  padding: 10px;
-  /*margin-bottom: 0px;*/
-  color: white;
-  font-weight: bold;
-  /*font-size: 18px;*/
-  transition: 0.6s ease;
-  border-radius: 3px 3px 3px 3px;
-}
-.prev {
-  margin-right: 20px;
-}
- /* Position the "next button" to the right */
-.next {
-  margin-left: 20px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+
+@media screen and (min-width: 600px) {
+    nav li {
+        border-bottom: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #ffc08c;
 }
 
-footer {
-    display: flex;
-    overflow: hidden;
-    background-color: #212121;
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar at the top of the page */
-	width: 100%; /* Full width */
-    margin: 0;
-    z-index: 1;
-    color: #fff;
-}
+.header {
 
-body {
-	/*margin: 0px;*/
 }
-/* Anchor offset */
-.destination {
-	position: relative;
-	z-index: -1;
-	left: 0;
-	margin-top: -5%;
-}
-/* a {
-    font-size: 2vw;
-} */
