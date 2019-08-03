@@ -1,8 +1,20 @@
+// Show navbar on scroll up
+var prevPos = window.pageYOffset;
+window.onscroll = function() {
+    var currentPos = window.pageYOffset;
+    if (prevPos > currentPos) {
+        document.getElementsByTagName('nav')[0].style.visibility = 'visible';
+    } else {
+        document.getElementsByTagName('nav')[0].style.visibility = 'hidden';
+    }
+    prevPos = currentPos;
+}
+
 // Smooth scrolling
-$("nav").find("a").click(function(e) {
+$('nav').find('a').click(function(e) {
     e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
+    var section = $(this).attr('href');
+    $('html, body').animate({
         scrollTop: $(section).offset().top
     });
 });
@@ -83,11 +95,4 @@ function showSlides(p, n) {
 
     slides[slideIndex3-1].style.display = "block";
   }
-  // var dots = document.getElementsByClassName("dot");
-
-
-  // for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  // dots[slideIndex-1].className += " active";
 }
