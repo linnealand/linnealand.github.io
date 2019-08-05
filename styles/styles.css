@@ -76,13 +76,33 @@ nav a:hover {
 }
 
 .gallery {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
 }
 
-.gallery img {
-    width: 100%;
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.column img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.img-container {
+    padding: 10px;
 }
 
 .project-1 {
