@@ -41,10 +41,6 @@ nav a:hover {
     flex-direction: column;
 }
 
-.container h1 {
-    text-align: center;
-}
-
 .header {
     position: relative;
 }
@@ -73,6 +69,60 @@ nav a:hover {
     padding-bottom: 100px;
     padding-left: 10vw;
     padding-right: 10vw;
+    text-align: center;
+}
+
+.section p {
+    text-align: left;
+}
+
+.section h1 {
+    display: inline-block;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    color: #0869c9;
+}
+
+.experience-1 {
+    margin-bottom: 40px;
+}
+.experience-1 img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.experience-2 img {
+    float: right;
+    margin-left: 20px;
+    background: #fff;
+}
+.experience-1 h2 {
+    text-align: left;
+}
+.experience-2 h2 {
+    text-align: right;
+}
+.experience-2 p {
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    #experience img {
+        display: none;
+    }
+}
+#experience p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#experience .info, #experience a {
+    color: #0869c9;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+#experience i {
+    margin-right: 4px;
 }
 
 #projects {
@@ -126,6 +176,7 @@ nav a:hover {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);*/
 }
+
 .overlay h2 {
     color: #fff;
     background-color: #0869c9;
@@ -134,12 +185,14 @@ nav a:hover {
     margin: 20px;
     padding-bottom: 20px;
 }
+
 .overlay p {
     color: #fff;
     background-color: #0869c9;
     margin: 20px;
 }
-.overlay span {
+
+.overlay .tech {
     color: #fff;
     background-color: #0869c9;
     position: absolute;
@@ -167,4 +220,5 @@ nav a:hover {
 
 footer {
     color: #fff;
+    padding-left: 10px;
 }
