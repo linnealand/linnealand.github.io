@@ -13,6 +13,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: 0px 1px 10px #59595c;
 }
 
 nav ul {
@@ -29,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: orange;
+    background-color: #ffa500;
 }
 
 @media screen and (min-width: 600px) {
@@ -242,4 +243,5 @@ nav a:hover {
 footer {
     color: #fff;
     padding-left: 10px;
+    background-color: #ffa500;
 }
