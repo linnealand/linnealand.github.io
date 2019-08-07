@@ -1,5 +1,5 @@
 // Show navbar on scroll up
-var prevPos = window.pageYOffset;
+/*var prevPos = window.pageYOffset;
 window.onscroll = function() {
     var currentPos = window.pageYOffset;
     if (prevPos > currentPos) {
@@ -8,7 +8,7 @@ window.onscroll = function() {
         document.getElementsByTagName('nav')[0].style.visibility = 'hidden';
     }
     prevPos = currentPos;
-}
+}*/
 
 // Smooth scrolling
 $('nav').find('a').click(function(e) {
@@ -21,7 +21,7 @@ $('nav').find('a').click(function(e) {
 
 
 // Project img slideshow
-var slideIndex1 = 1;
+/*var slideIndex1 = 1;
 showSlides(1, slideIndex1);
 var slideIndex2 = 1;
 showSlides(2, slideIndex2);
@@ -95,4 +95,4 @@ function showSlides(p, n) {
 
     slides[slideIndex3-1].style.display = "block";
   }
-}
+}*/
