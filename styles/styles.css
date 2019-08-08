@@ -220,6 +220,11 @@ nav a:hover {
     bottom: 0;
     margin: 20px;
 }
+.overlay i {
+    color: #fff;
+    background-color: #0869c9;
+    margin-right: 4px;
+}
 
 .overlay {
     position: absolute;
