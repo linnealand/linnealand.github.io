@@ -16,9 +16,17 @@ nav {
     box-shadow: 0px 1px 10px #59595c;
 }
 
+#bars {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     text-align: center;
+}
+
+nav li {
+    display: inline-block;
 }
 
 nav a {
@@ -33,9 +41,13 @@ nav a:hover {
     background-color: #ffa500;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     nav li {
-        display: inline-block;
+        display: list-item;
+    }
+    #bars {
+        display: list-item;
+        margin: 10px;
     }
 }
 
