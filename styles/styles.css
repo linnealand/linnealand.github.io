@@ -20,7 +20,8 @@ nav {
     display: none;
 }
 
-nav ul {
+#links {
+    display: block;
     list-style: none;
     text-align: center;
 }
@@ -46,8 +47,12 @@ nav a:hover {
         display: list-item;
     }
     #bars {
-        display: list-item;
+        display: block;
         margin: 10px;
+        cursor: pointer;
+    }
+    #links {
+        display: none;
     }
 }
 
