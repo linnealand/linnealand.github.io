@@ -10,6 +10,16 @@ window.onscroll = function() {
     prevPos = currentPos;
 }*/
 
+// Mobile navbar
+function dropdownMenu() {
+    var links = document.getElementById('links');
+    if (links.style.display === 'block') {
+        links.style.removeProperty('display');
+    } else {
+        links.style.display = 'block';
+    }
+}
+
 // Smooth scrolling
 $('nav').find('a').click(function(e) {
     e.preventDefault();
