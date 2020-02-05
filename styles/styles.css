@@ -230,6 +230,13 @@ nav a:hover {
     margin: 20px;
 }
 
+.overlay a {
+    color: #fff;
+    background-color: #0869c9;
+    margin: 20px;
+    font-weight: bold;
+}
+
 .overlay .tech {
     color: #fff;
     background-color: #0869c9;
