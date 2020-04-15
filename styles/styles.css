@@ -1,9 +1,15 @@
 * {
     font-family: 'Raleway', sans-serif;
-    color: #59595c;
-    background-color: #ffc08c;
+    color: #532D3D;
+    /* background-color: #ffc08c; */
     margin: 0px;
     padding: 0px;
+}
+
+.heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 /* Navigation */
@@ -13,15 +19,21 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
-    box-shadow: 0px 1px 10px #59595c;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
 }
 
-#bars {
-    display: none;
+#name {
+    font-size: 20px;
 }
+
+/* #bars {
+    width: 22px;
+} */
 
 #links {
-    display: block;
+    display: none;
     list-style: none;
     text-align: center;
 }
@@ -42,7 +54,7 @@ nav a:hover {
     background-color: #ffa500;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     nav li {
         display: list-item;
     }
@@ -54,45 +66,65 @@ nav a:hover {
     #links {
         display: none;
     }
-}
+} */
 
 .container {
     display: flex;
     flex-direction: column;
 }
 
-/* Header */
+/* Home */
 
-.header {
+/* .header {
     position: relative;
+} */
+
+#home {
+    padding: 0;
 }
 
-.name {
-    padding: 20px;
-    color: #0869c9;
-    font-size: 3em;
-    font-weight: bold;
+.home-text {
+    /* padding: 20px; */
+    /* color: #0869c9; */
+    font-size: 20px;
     text-align: center;
-    background: none;
-    background: rgba(255, 255, 255, 0.8);
+    /* justify-self: center; */
+    /* align-self: center; */
+    /* background: none; */
+    /* background: rgba(255, 255, 255, 0.8); */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 20%;
+    left: 0;
+    width: 100%;
+    /* transform: translate(-50%, -50%); */
+    /* -ms-transform: translate(-50%, -50%); */
 }
 
-.header img {
-    width: 100%;
+.image-container {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+}
+
+.image-container img {
+    object-fit: cover;
+    min-width: 100vw;
+    height: 100%;
 }
 
 .section {
-    padding-top: 100px;
-    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
-    text-align: center;
 }
+
+/* Projects */
 
 #projects {
     padding-bottom: 100px;

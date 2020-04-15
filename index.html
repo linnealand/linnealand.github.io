@@ -3,101 +3,64 @@
 <html>
     <head>
         <title>Linnea Land</title>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset='utf-8' name='viewport' content='width=device-width, initial-scale=1'>
         <link href='styles/styles.css' type='text/css' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Major+Mono+Display' rel='stylesheet'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
 
+<header>
+    <nav>
+        <!-- Navigation -->
+        <div id='name'>Linnea Lindstrom</div>
+        <i id='bars' class='fa fa-lg fa-bars' onclick='dropdownMenu()'></i>
+        <ul id='links'>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#contact'>Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
     <body>
-        <nav>
-            <!-- Navigation -->
-            <i id='bars' class='fa fa-lg fa-bars' onclick='dropdownMenu()'></i>
-            <ul id='links'>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#experience'>Experience</a></li>
-                <li><a href='#projects'>Projects</a></li>
-            </ul>
-        </nav>
 
         <div class='container'>
-            <!-- Header -->
-            <div class='header'>
-                <img src='images/header.jpg' alt='Autumn'>
-                <div class='name'>Linnea Lindstrom</div>
+            <!-- Home -->
+            <div id='home' class='section'>
+                <div class='image-container'>
+                    <img src='images/sakura.jpg' alt='Sakura' style='transform: rotate(180deg);'>
+                </div>
+                <div class='home-text'>Hi, I’m <span style='color: #BD005E'>Linnea Lindstrom</span>.<br>
+                    I’m a computer science student at Purdue University.</div>
             </div>
 
             <!-- About -->
-            <div id='about' class='section'>
-                <h1>About</h1>
-                <p>Hi, I'm Linnea! I'm a sophomore at Purdue University majoring in Computer Science. I love creating things and solving problems. I enjoy playing video games and cuddling with my cats.</p>
-            </div>
-
-            <!-- Experience -->
-            <div id='experience' class='section'>
-                <h1>Experience</h1>
-                <div class='experience-1'>
-                    <img src='images/policystat.jpg' alt='PolicyStat'>
-                    <h2>Policystat (Xtern program)</h2>
-                    <p>Software Engineer Intern | May - August 2019</p>
-                    <p>I worked with Python and the Django framework on the backend and jQuery on the frontend to complete tickets. I worked with the DevOps engineer to deploy customer-impacting changes.</p>
-                    <p class='info'><i class='fa fa-map-marker' aria-hidden='true'></i>Carmel, IN  |  <i class='fa fa-link' aria-hidden='true'></i><a href='https://www.icontracts.com/policy-management/' target='_blank'>iContracts</a>
-                    </p>
-                </div>
-                <div style='clear: both;'></div>
-                <div class='experience-2'>
-                    <img src='images/windsor.png' alt='Windsor'>
-                    <h2>Windsor Dining Court</h2>
-                    <p>Student Cook in Training | August 2018 - May 2019</p>
-                    <p>I carried out duties including prepping food, washing dishes, wiping tables, and serving customers.</p>
-                    <p class='info'><i class='fa fa-map-marker' aria-hidden='true'></i>West Lafayette, IN | <i class='fa fa-link' aria-hidden='true'></i><a href='https://dining.purdue.edu/' target='_blank'>Purdue Dining</a></p>
-                </div>
-                <div style='clear: both;'></div>
+            <div id='about' class='section' style='background-color: #FFEFF5;'>
+                <div class='heading'>About</div>
+                <p>Hi, I'm Linnea! I'm a junior at Purdue University majoring in Computer Science.
+                    I love creating things and solving problems. I enjoy playing video games and cuddling with my cats.</p>
             </div>
 
             <!-- Projects -->
-            <div id='projects' class='section'>
-                <h1>Projects</h1>
-                <div class='gallery'>
-                    <div class='column'>
-                        <div class='project-container'>
-                            <div class='image-container'>
-                                <img src='images/project-1.png' alt='Nyah'>
-                                <div class='overlay'>
-                                    <h2>Nyah</h2>
-                                    <p>A game involving a cat eating food.</p>
-                                    <p class='tech'><i class='fa fa-code' aria-hidden='true'></i>Python</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='project-container'>
-                            <div class='image-container'>
-                                <img src='images/project-2.png' alt='Rectangle Game'>
-                                <div class='overlay'>
-                                    <h2>Rectangle Game</h2>
-                                    <p>A 2-player game: collaborate to reach the exits.</p>
-                                    <p class='tech'><i class='fa fa-code' aria-hidden='true'></i>Java</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='column'>
-                        <div class='project-container'>
-                            <div class='image-container'>
-                                <img src='images/project-3.png' alt='LoL Role Quiz'>
-                                <div class='overlay'>
-                                    <h2>LoL Role Quiz</h2>
-                                    <p>A quiz to determine which role in League of Legends you should main.</p>
-                                    <a href="https://linnealand.github.io/lol-role-quiz/" target="_blank">Click here to take the quiz!</a>
-                                    <p class='tech'><i class='fa fa-code' aria-hidden='true'></i>JS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id='projects' class='section' style='background-color: #F6EBF3;'>
+                <div class='heading'>Projects</div>
+                <!-- <div class="slide"> Slide 1 </div> -->
+                <!-- <div class="slide"> Slide 2 </div> -->
             </div>
+
+            <!-- Skills -->
+            <div id='skills' class='section' style='background-color: #FFEFF5;'>
+                <div class='heading'>Skills</div>
+
+            </div>
+
+            <!-- Contact -->
+            <div id='contact' class='section' style='background-color: #F6EBF3;'>
+                <div class='heading'>contact</div>
+
+            </div>
+
 		</div>
 
         <footer>
