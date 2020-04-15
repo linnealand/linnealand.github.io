@@ -18,13 +18,14 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-#name {
+#name, #bars {
     font-size: 20px;
 }
 
@@ -38,25 +39,42 @@ nav {
     text-align: center;
 }
 
-nav {
-    transition: background-color 1s ease 0s;
-}
+/* Navigation overlay */
 
-nav li {
-    display: inline-block;
-}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #BFD4E7, #FFEFF5);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
 
-nav a {
+.overlay-content a {
     display: block;
     text-decoration: none;
     text-align: center;
     padding: 12px;
-    /* color: #fff; */
 }
 
-nav a:hover {
-    background-color: #ffa500;
-}
+/* Navbar transparent -> solid */
 
 #name, #bars {
     transition: color 1s ease 0s;
@@ -67,11 +85,16 @@ nav a:hover {
     transition: color 1s ease 0s;
 }
 
+.navbar {
+    transition: background-color 1s ease 0s;
+}
+
 .navbar.solid {
     background-color: #532D3D;
     transition: background-color 1s ease 0s;
-    box-shadow: 0 0 4px grey;
+    /* box-shadow: 0 0 4px grey; */
 }
+
 
 /* @media screen and (max-width: 600px) {
     nav li {
@@ -264,54 +287,6 @@ nav a:hover {
     background-color: #0869c9;
     position: absolute;
     margin: 40px;
-}
-
-.overlay h2 {
-    color: #fff;
-    background-color: #0869c9;
-    font-size: 20px;
-    border-bottom: 2px solid;
-    margin: 20px;
-    padding-bottom: 20px;
-}
-
-.overlay p {
-    color: #fff;
-    background-color: #0869c9;
-    margin: 20px;
-}
-
-.overlay a {
-    color: #fff;
-    background-color: #0869c9;
-    margin: 20px;
-    font-weight: bold;
-}
-
-.overlay .tech {
-    color: #fff;
-    background-color: #0869c9;
-    position: absolute;
-    bottom: 0;
-    margin: 20px;
-}
-.overlay i {
-    color: #fff;
-    background-color: #0869c9;
-    margin-right: 4px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #0869c9;
 }
 
 .image-container:hover .overlay {

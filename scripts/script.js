@@ -35,6 +35,20 @@ function dropdownMenu() {
     }
 }
 
+// $('button').on('click', function(){
+//   $('body').toggleClass('open');
+// });
+
+function openNav() {
+  document.getElementById("nav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("nav").style.width = "0%";
+}
+
+
 // Smooth scrolling
 $('nav').find('a').click(function(e) {
     e.preventDefault();
