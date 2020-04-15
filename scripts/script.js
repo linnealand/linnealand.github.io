@@ -10,6 +10,21 @@ window.onscroll = function() {
     prevPos = currentPos;
 }*/
 
+// Transparent to solid navbar
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if($(window).scrollTop() >= window.innerHeight) {
+      $('.navbar').addClass('solid');
+      $('#name').addClass('solid');
+      $('#bars').addClass('solid');
+    } else {
+      $('.navbar').removeClass('solid');
+      $('#name').removeClass('solid');
+      $('#bars').removeClass('solid');
+    }
+  });
+});
+
 // Mobile navbar
 function dropdownMenu() {
     var links = document.getElementById('links');

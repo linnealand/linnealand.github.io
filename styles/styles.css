@@ -38,6 +38,10 @@ nav {
     text-align: center;
 }
 
+nav {
+    transition: background-color 1s ease 0s;
+}
+
 nav li {
     display: inline-block;
 }
@@ -47,11 +51,26 @@ nav a {
     text-decoration: none;
     text-align: center;
     padding: 12px;
-    color: #fff;
+    /* color: #fff; */
 }
 
 nav a:hover {
     background-color: #ffa500;
+}
+
+#name, #bars {
+    transition: color 1s ease 0s;
+}
+
+#name.solid, #bars.solid {
+    color: #FFFFFF;
+    transition: color 1s ease 0s;
+}
+
+.navbar.solid {
+    background-color: #532D3D;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
 }
 
 /* @media screen and (max-width: 600px) {
