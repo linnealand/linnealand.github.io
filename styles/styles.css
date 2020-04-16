@@ -6,16 +6,28 @@
     padding: 0px;
 }
 
+/* Navigation */
+
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: 0px 1px 10px #59595c;
 }
 
-nav ul {
+#bars {
+    display: none;
+}
+
+#links {
+    display: block;
     list-style: none;
     text-align: center;
+}
+
+nav li {
+    display: inline-block;
 }
 
 nav a {
@@ -27,12 +39,20 @@ nav a {
 }
 
 nav a:hover {
-    background-color: orange;
+    background-color: #ffa500;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     nav li {
-        display: inline-block;
+        display: list-item;
+    }
+    #bars {
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    #links {
+        display: none;
     }
 }
 
@@ -40,6 +60,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
+
+/* Header */
 
 .header {
     position: relative;
@@ -66,10 +88,28 @@ nav a:hover {
 
 .section {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     padding-left: 10vw;
     padding-right: 10vw;
     text-align: center;
+}
+
+#projects {
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
 }
 
 .section p {
@@ -82,6 +122,8 @@ nav a:hover {
     margin-bottom: 20px;
     color: #0869c9;
 }
+
+/* Experience */
 
 .experience-1 {
     margin-bottom: 40px;
@@ -114,16 +156,16 @@ nav a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 #experience .info, #experience a {
     color: #0869c9;
     text-decoration: none;
     margin-bottom: 20px;
 }
-
 #experience i {
     margin-right: 4px;
 }
+
+/* Projects */
 
 #projects {
     align-items: center;
@@ -171,10 +213,6 @@ nav a:hover {
     background-color: #0869c9;
     position: absolute;
     margin: 40px;
-    /*top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);*/
 }
 
 .overlay h2 {
@@ -192,12 +230,24 @@ nav a:hover {
     margin: 20px;
 }
 
+.overlay a {
+    color: #fff;
+    background-color: #0869c9;
+    margin: 20px;
+    font-weight: bold;
+}
+
 .overlay .tech {
     color: #fff;
     background-color: #0869c9;
     position: absolute;
     bottom: 0;
     margin: 20px;
+}
+.overlay i {
+    color: #fff;
+    background-color: #0869c9;
+    margin-right: 4px;
 }
 
 .overlay {
@@ -217,8 +267,10 @@ nav a:hover {
     opacity: 0.8;
 }
 
+/* Footer */
 
 footer {
     color: #fff;
     padding-left: 10px;
+    background-color: #ffa500;
 }

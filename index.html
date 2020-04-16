@@ -4,15 +4,18 @@
     <head>
         <title>Linnea Land</title>
         <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link href='styles/styles.css' type='text/css' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Major+Mono+Display' rel='stylesheet'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
 
     <body>
         <nav>
             <!-- Navigation -->
-            <ul>
+            <i id='bars' class='fa fa-lg fa-bars' onclick='dropdownMenu()'></i>
+            <ul id='links'>
                 <li><a href='#about'>About</a></li>
                 <li><a href='#experience'>Experience</a></li>
                 <li><a href='#projects'>Projects</a></li>
@@ -40,7 +43,7 @@
                     <h2>Policystat (Xtern program)</h2>
                     <p>Software Engineer Intern | May - August 2019</p>
                     <p>I worked with Python and the Django framework on the backend and jQuery on the frontend to complete tickets. I worked with the DevOps engineer to deploy customer-impacting changes.</p>
-                    <p class='info'><i class='fas fa-map-pin'></i>Carmel, IN  |  <i class="fas fa-link"></i><a href='https://www.icontracts.com/policy-management/' target='_blank'>iContracts</a>
+                    <p class='info'><i class='fa fa-map-marker' aria-hidden='true'></i>Carmel, IN  |  <i class='fa fa-link' aria-hidden='true'></i><a href='https://www.icontracts.com/policy-management/' target='_blank'>iContracts</a>
                     </p>
                 </div>
                 <div style='clear: both;'></div>
@@ -49,7 +52,7 @@
                     <h2>Windsor Dining Court</h2>
                     <p>Student Cook in Training | August 2018 - May 2019</p>
                     <p>I carried out duties including prepping food, washing dishes, wiping tables, and serving customers.</p>
-                    <p class='info'><i class='fas fa-map-pin'></i>West Lafayette, IN | <i class="fas fa-link"></i><a href='https://dining.purdue.edu/' target='_blank'>Purdue Dining</a></p>
+                    <p class='info'><i class='fa fa-map-marker' aria-hidden='true'></i>West Lafayette, IN | <i class='fa fa-link' aria-hidden='true'></i><a href='https://dining.purdue.edu/' target='_blank'>Purdue Dining</a></p>
                 </div>
                 <div style='clear: both;'></div>
             </div>
@@ -65,7 +68,7 @@
                                 <div class='overlay'>
                                     <h2>Nyah</h2>
                                     <p>A game involving a cat eating food.</p>
-                                    <p class='tech'>[ Python ]</p>
+                                    <p class='tech'><i class='fa fa-code' aria-hidden='true'></i>Python</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +78,7 @@
                                 <div class='overlay'>
                                     <h2>Rectangle Game</h2>
                                     <p>A 2-player game: collaborate to reach the exits.</p>
-                                    <p class='tech'>[ Java ]</p>
+                                    <p class='tech'><i class='fa fa-code' aria-hidden='true'></i>Java</p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +90,8 @@
                                 <div class='overlay'>
                                     <h2>LoL Role Quiz</h2>
                                     <p>A quiz to determine which role in League of Legends you should main.</p>
-                                    <p class='tech'>[ JS ]</p>
+                                    <a href="https://linnealand.github.io/lol-role-quiz/" target="_blank">Click here to take the quiz!</a>
+                                    <p class='tech'><i class='fa fa-code' aria-hidden='true'></i>JS</p>
                                 </div>
                             </div>
                         </div>
@@ -97,10 +101,10 @@
 		</div>
 
         <footer>
-            Welcome to Linnea Land ♥
+            Welcome to Linnea Land
+            <i class='fa fa-heart' aria-hidden='true' style='color: #fff; background: #ffa500;'></i>
         </footer>
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src='scripts/script.js'></script>
-        <script src='https://kit.fontawesome.com/7e7232fc01.js'></script>
     </body>
 </html>
