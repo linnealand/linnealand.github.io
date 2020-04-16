@@ -13,10 +13,7 @@
     <nav class='navbar'>
         <!-- Navigation -->
         <div id='name'>Linnea Lindstrom</div>
-        <!-- <div id='bars' onclick='openNav()'>&#9776;</span> -->
-        <!-- <img id='bars' class='icon' src="images/bars.svg" alt='Menu Icon' onclick='openNav()'> -->
         <div id='bars' class='nav-icon' onclick='toggleNav()'>
-            <!-- <div></div> -->
         </div>
 
         <!-- <ul id='links'>
@@ -29,8 +26,6 @@
     </nav>
 
     <div id="nav" class="overlay">
-        <!-- <img id='close' class='close icon' src='images/close.svg' alt='Close Icon' onclick='closeNav()'> -->
-        <!-- <a href="#" class="close" onclick="closeNav()" style='text-decoration: none;'>&times;</a> -->
         <div class="overlay-content" onclick="toggleNav()">
             <a href='#home'>Home</a>
             <a href='#about'>About</a>
@@ -41,19 +36,15 @@
     </div>
 </header>
 
-
-
-
 <body>
-
     <div class='container'>
         <!-- Home -->
         <div id='home'>
             <div class='image-container'>
                 <img src='images/sakura.jpg' alt='Sakura' style='transform: rotate(180deg);'>
             </div>
-            <div class='home-text'>Hi, I’m <span style='color: #BD005E'>Linnea Lindstrom</span>.<br>
-                I’m a computer science student at Purdue University.</div>
+            <div class='home-text'><div style='font-size: 24px;'>Hi, I’m <span style='color: #BD005E'>Linnea Lindstrom</span>.</div>
+                <div>I’m a computer science student at Purdue University.</div></div>
         </div>
 
         <!-- About -->
@@ -86,7 +77,7 @@
 
     <footer>
         Welcome to Linnea Land
-        <i class='fa fa-heart' aria-hidden='true' style='color: #fff; background: #ffa500;'></i>
+        <i class='fa fa-heart' aria-hidden='true'></i>
     </footer>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='scripts/script.js'></script>

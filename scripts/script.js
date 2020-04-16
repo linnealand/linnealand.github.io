@@ -1,15 +1,3 @@
-// Show navbar on scroll up
-/*var prevPos = window.pageYOffset;
-window.onscroll = function() {
-    var currentPos = window.pageYOffset;
-    if (prevPos > currentPos) {
-        document.getElementsByTagName('nav')[0].style.visibility = 'visible';
-    } else {
-        document.getElementsByTagName('nav')[0].style.visibility = 'hidden';
-    }
-    prevPos = currentPos;
-}*/
-
 // Transparent to solid navbar
 $(document).ready(function () {
   $(window).scroll(function () {
