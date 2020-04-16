@@ -11,9 +11,9 @@ window.onscroll = function() {
 }*/
 
 // Transparent to solid navbar
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if($(window).scrollTop() >= window.innerHeight) {
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= window.innerHeight) {
       $('.navbar').addClass('solid');
       $('#name').addClass('solid');
       $('#bars').addClass('solid');
@@ -25,37 +25,25 @@ $(document).ready(function() {
   });
 });
 
-// Mobile navbar
-function dropdownMenu() {
-    var links = document.getElementById('links');
-    if (links.style.display === 'block') {
-        links.style.removeProperty('display');
-    } else {
-        links.style.display = 'block';
-    }
+// Open/close navigation menu
+function toggleNav() {
+  $('.nav-icon').toggleClass('close');
+  $('body').toggleClass('disable-scroll');
+
+  if (document.getElementById("nav").style.height === "100%") {
+    document.getElementById("nav").style.height = "0%";
+  } else {
+    document.getElementById("nav").style.height = "100%";
+  }
 }
-
-// $('button').on('click', function(){
-//   $('body').toggleClass('open');
-// });
-
-function openNav() {
-  document.getElementById("nav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("nav").style.width = "0%";
-}
-
 
 // Smooth scrolling
-$('nav').find('a').click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(section).offset().top
-    });
+$('nav').find('a').click(function (e) {
+  e.preventDefault();
+  var section = $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(section).offset().top
+  });
 });
 
 
