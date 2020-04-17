@@ -10,13 +10,16 @@ html {
 }
 
 body.disable-scroll {
-    margin: 0; height: 100%; overflow: hidden
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 .heading {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .section {
@@ -28,8 +31,9 @@ body.disable-scroll {
     justify-content: center;
     align-items: center;
     /* width: 100vw; */
-    padding-left: 10vw;
-    padding-right: 10vw;
+    /* padding-left: 10vw; */
+    /* padding-right: 10vw; */
+    padding: 30px 10vw 30px 10vw;
 }
 
 /* Navigation */
@@ -208,6 +212,20 @@ nav {
 
 /* Projects */
 
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 50vw;
+    max-width: 400px;
+    height: 300px;
+    margin: 0px 15px 30px 15px;
+    /* padding: 30px; */
+}
 
 /* Skills */
 
