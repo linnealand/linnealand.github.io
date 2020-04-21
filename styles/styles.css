@@ -275,20 +275,50 @@ nav {
 }
 
 .tag {
+    margin: 10px 0px;
     text-transform: uppercase;
     opacity: 0.5;
-    margin: 10px 0px;
 }
 
-/* .nav-icon:after,
-.nav-icon:before {
-    background-color: #532D3D;
+.button {
+    margin-top: 10px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #BD005E;
+    /* font-size: 16px; */
+}
+
+.button i {
+    color: #BD005E;
+    vertical-align: middle;
+}
+
+/* .button-icon {
+    width: 16px;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+}
+
+.button-icon:after,
+.button-icon:before {
+    background-color: #BD005E;
     border-radius: 2px;
     content: '';
     display: block;
     height: 3px;
-    transition: all .2s ease-in-out;
+}
+
+.button-icon:before {
+    transform: translateY(-4px) rotate(45deg);
+}
+
+.button-icon:after {
+    transform: translateY(4px) rotate(-45deg);
 } */
+
 .arrow-icon {
     cursor: pointer;
     position: absolute;
