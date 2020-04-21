@@ -61,7 +61,6 @@ nav {
 } */
 
 .nav-icon {
-    /* margin: 1em; */
     width: 36px;
     cursor: pointer;
 }
@@ -73,7 +72,6 @@ nav {
     content: '';
     display: block;
     height: 3px;
-    /* margin: 10px 0; */
     transition: all .2s ease-in-out;
 }
 
@@ -210,6 +208,12 @@ nav {
     height: 100%;
 }
 
+/* About */
+
+#about p {
+    font-size: 18px;
+}
+
 /* Projects */
 
 .project-cards {
@@ -222,7 +226,8 @@ nav {
     background-color: #FFFFFF;
     width: 80vw;
     max-width: 400px;
-    height: 400px;
+    height: 80vw;
+    max-height: 400px;
     margin: 0px 15px 30px 15px;
     border-radius: 8px;
     /* padding: 30px; */
@@ -295,30 +300,6 @@ nav {
     vertical-align: middle;
 }
 
-/* .button-icon {
-    width: 16px;
-    cursor: pointer;
-    display: inline-block;
-    justify-content: center;
-}
-
-.button-icon:after,
-.button-icon:before {
-    background-color: #BD005E;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    height: 3px;
-}
-
-.button-icon:before {
-    transform: translateY(-4px) rotate(45deg);
-}
-
-.button-icon:after {
-    transform: translateY(4px) rotate(-45deg);
-} */
-
 .arrow-icon {
     cursor: pointer;
     position: absolute;
@@ -360,29 +341,27 @@ nav {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* .fa-arrow-left {
-    cursor: pointer;
-    position: absolute;
-    width: 36px;
-    top: 15px;
-    left: 10px;
-    z-index: 3;
-} */
-
 /* Skills */
 
 .skills-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 576px) {
+    .skills-list {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
 }
 
 .skills-list ul {
     list-style-position: inside;
     text-align: left;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .skills-list ul ul {
@@ -398,6 +377,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 10px;
 }
 
 /* Footer */
