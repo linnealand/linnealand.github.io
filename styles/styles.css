@@ -371,9 +371,34 @@ nav {
 
 /* Skills */
 
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
-/* Contact */
+.skills-list ul {
+    list-style-position: inside;
+    text-align: left;
+    font-size: 18px;
+}
 
+.skills-list ul ul {
+    margin-left: 30px;
+}
+
+.list-heading {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Footer */
 
