@@ -34,6 +34,19 @@ $('nav').find('a').click(function (e) {
   });
 });
 
+// More info for project (overlay)
+$('.card, .arrow-icon').click(function() { 
+  var id = $(this).attr('id');
+  var num = id.slice(-1);
+  $('#project-' + num + '.project-overlay').toggleClass('show');
+  $('body').toggleClass('disable-scroll');
+});
+// function toggleMoreInfo() {
+//   $('#project-1.project-overlay').toggleClass('show');
+//   $('body').toggleClass('disable-scroll');
+//   console.log($(this).parent());
+// }
+
 
 // Project img slideshow
 /*var slideIndex1 = 1;
