@@ -48,7 +48,7 @@ $('.card, .arrow-icon').click(function() {
 // }
 
 
-// Project img slideshow
+// Project image slideshow
 /*var slideIndex1 = 1;
 showSlides(1, slideIndex1);
 var slideIndex2 = 1;

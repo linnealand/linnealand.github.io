@@ -264,10 +264,39 @@ nav {
 
 .carousel {
     width: 100%;
+    height: 100vw;
+    /* background-color: #E4E4E4; */
+    background-color: #FFFFFF;
 }
 
 .carousel img {
     width: 100%;
+    box-sizing: border-box;
+}
+
+.padded-image {
+    padding: 65px;
+}
+
+.prev,
+.next {
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* left: 20px; */
+    transform: translate(0%, -50%);
+    font-size: 36px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
 }
 
 .description {
@@ -353,6 +382,12 @@ nav {
     transform: translateY(-10px) rotate(-45deg);
 }
 
+.white div,
+.white:before,
+.white:after {
+    background-color: #FFFFFF;
+}
+
 /* Skills */
 
 .skills-list {
@@ -410,6 +445,10 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 720px) {
 
+    /* Navigation */
+
+    /* TODO */
+
     /* Project overlay */
 
     .project-content {
@@ -429,11 +468,18 @@ footer {
 
     .carousel img {
         max-width: 800px;
+        padding: 0px;
     }
 
     .project-overlay .description {
         width: 50vw;
         margin-top: 30px;
+    }
+
+    .arrow-icon div,
+    .arrow-icon:before,
+    .arrow-icon:after {
+        background-color: #532D3D;
     }
 
     /* Skills */
