@@ -1,6 +1,6 @@
 # linnealand.github.io
 
-Welcome to Linnea Land! This is my personal website, showcasing a few of my projects.
+Welcome to Linnea Land! https://linnealand.github.io is my personal website, showcasing a few of my projects.
 
 ## Themes
 ### Sakura (master)
